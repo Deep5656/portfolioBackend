@@ -1,18 +1,26 @@
-package com.portfolio.projecthandle.controller;
+package com.portfolio.signup.controller;
 
-import com.portfolio.projecthandle.model.Project;
-import com.portfolio.projecthandle.service.ProjectService;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
+import com.portfolio.signup.model.Project;
+import com.portfolio.signup.services.ProjectService;
 
 @RestController
 @RequestMapping("/project")
-@CrossOrigin("*")
+@CrossOrigin("https://portfoliosignup-production.up.railway.app/project")
 public class ProjectController {
 
     @Autowired

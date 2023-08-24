@@ -13,7 +13,7 @@ import java.util.List;
 @Slf4j
 @RestController
 @RequestMapping("/user")
-@CrossOrigin("*")
+@CrossOrigin("https://portfoliosignup-production.up.railway.app/user")
 public class UserController {
     @Autowired
     private UserService userService;
