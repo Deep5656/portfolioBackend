@@ -20,7 +20,7 @@ import com.portfolio.signup.services.ProjectService;
 
 @RestController
 @RequestMapping("/project")
-@CrossOrigin("https://portfoliosignup-production.up.railway.app/project")
+@CrossOrigin("*")
 public class ProjectController {
 
     @Autowired
